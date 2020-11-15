@@ -22,9 +22,7 @@ services:
       ME_CONFIG_MONGODB_SERVER: mongodb
   app:
     container_name: app
-    build:
-      context: ./
-      dockerfile: ./Dockerfile
+    image: 208426166126.dkr.ecr.eu-central-1.amazonaws.com/my-app:2.0
     ports:
     - "3000:3000"
 volumes:
